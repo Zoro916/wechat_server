@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 微信网页授权demo
+    style.
+      #detailinfo,td{
+      border-collapse:collapse;
+      border: 1px solid #eee;
+      }
+      #detailinfo img{
+      width: 40px;
+      height: 40px;
+      }
+  body
+    h1 详细信息页
+    table#detailinfo
+      tr
+        td 头像
+        td
+          img(src='#{headimgurl}')
+      tr
+        td 昵称
+        td #{nickname}
+      tr
+        td 性别
+        td #{sex}
+      tr
+        td OPENID
+        td #{OPENID}
+      tr
+        td 国籍
+        td #{country}
+      tr
+        td 省份
+        td #{province}
+      tr
+        td 城市
+        td #{city}

@@ -1,0 +1,21 @@
+{
+  "name": "wechardemo",
+  "version": "1.0.0",
+  "description": "获取微信网页授权demo实现",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zoro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "connect-multiparty": "^2.0.0",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.9.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  }
+}

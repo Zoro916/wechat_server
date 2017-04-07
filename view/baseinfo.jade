@@ -1,0 +1,37 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title 微信网页授权demo
+    script.
+      var gotodetailinfo = function(){
+      window.location.href = '/detailinfo';
+      }
+    style.
+      #baseinfo{
+      border-collapse:collapse;
+      border: 1px solid #eee;
+      }
+      .headimgurl img{
+      width: 40px;
+      height: 40px;
+      }
+      td{
+      border: 1px solid #eee;
+      }
+  body
+    h1 基本信息页
+    table#baseinfo
+      tr.headimgurl
+        td 头像
+        td
+          img(src='#{headimgurl}')
+      tr.nickname
+        td 昵称
+        td #{nickname}
+      tr.sex
+        td 性别
+        td #{sex}
+    button(onclick='gotodetailinfo()') 点击获取微信基本信息
